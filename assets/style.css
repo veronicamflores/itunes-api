@@ -1,0 +1,26 @@
+body{
+    background-image:url('cassette-cassette-tape-music-92083.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: 'Gloria Hallelujah', cursive;
+}
+
+audio{
+    width: unset;
+    min-height: 1rem;
+}
+
+.yellow{
+    background-color: rgb(247, 222, 85);
+}
+
+.btn{
+    font-size: 1.3rem;
+}
+
+.img-res{
+    width:100%;
+    height: auto;
+}
