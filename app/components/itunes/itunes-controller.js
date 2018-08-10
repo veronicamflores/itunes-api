@@ -5,6 +5,7 @@ import ItunesService from "./itunes-service.js";
 const itunesService = new ItunesService()
 
 function drawSongs(songs) {
+    removeClass();
   console.log(songs)
 
   //YOUR CODING STARTS HERE
@@ -14,7 +15,7 @@ for (let i = 0; i < songs.length; i++) {
     const song = songs[i];
     template += `
     <div class="col-xs-12 col-md-12 ">
-        <div class="row mt-5">
+        <div class="row mt-3 mb-3">
             <div class="col-xs-12 col-sm-4">
                <div><img class="img-fluid img-res" src="${song.albumArt}" alt="${song.collection}"></div>
             </div>
@@ -61,6 +62,9 @@ class ItunesController {
   }
 
 
+}
+function removeClass(){
+    document.getElementById('center').classList.remove('center-place')
 }
 
 

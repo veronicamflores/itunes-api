@@ -24,3 +24,15 @@ audio{
     width:100%;
     height: auto;
 }
+
+.center-place{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height:40rem;
+}
+.card{
+    background: rgba(255, 255, 255, 0.5);
+}
