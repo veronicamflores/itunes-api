@@ -36,3 +36,12 @@ audio{
 .card{
     background: rgba(255, 255, 255, 0.5);
 }
+
+h1{
+    font-size:5rem;
+}
+
+.form-inline{
+    background: rgba(255, 255, 255, 0.50);
+    font-size: 2rem;
+}
