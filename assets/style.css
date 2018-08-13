@@ -17,6 +17,7 @@ audio{
 }
 
 .btn{
+    background-color:#ec5d97;
     font-size: 1.3rem;
 }
 
@@ -41,7 +42,9 @@ h1{
     font-size:5rem;
 }
 
-.form-inline{
-    background: rgba(255, 255, 255, 0.50);
+input.form-control{
+    background:rgba(181, 203, 228, 0.5);
     font-size: 2rem;
+    color: black;
 }
+   
