@@ -13,8 +13,9 @@ function drawSongs(songs) {
   
       for (let i = 0; i < songs.length; i++) {
     const song = songs[i];
-    if(!song.preview.lowerCase() == "video"){
+    // if(song.preview.indexOf("video") == 0){
     template += `
+
     <div class="col-xs-12 col-md-12 ">
         <div class="row mt-3 mb-3">
             <div class="col-xs-12 col-sm-4">
@@ -29,7 +30,7 @@ function drawSongs(songs) {
                             <p>Song: ${song.title}</p>
                             <p>Album Price: ${song.price}</p>
                         </div>    
-                    <audio class="audio" controls class="mb-2">
+                    <audio class="audio" controls class="mb-2" onplay="playAudio()">
                         <source src="${song.preview}"/>
                     </audio>
                     </div>
@@ -37,12 +38,23 @@ function drawSongs(songs) {
             </div>
         </div>            
     </div>
-`}
+`
+// }
   }
 
 
 document.getElementById('songs').innerHTML = template
 
+}
+
+function playAudio(){
+    let audios = document.getElementsByTagName('audio')
+    for (let i = 0; i < audios.length; i++) {
+        if (audios[i] != song.target) {
+            audios[i].pause()
+        }
+        
+    }
 }
 
 //PUBLIC
