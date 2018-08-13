@@ -10,9 +10,10 @@ function drawSongs(songs) {
 
   //YOUR CODING STARTS HERE
   let template =""
-
-for (let i = 0; i < songs.length; i++) {
+  
+      for (let i = 0; i < songs.length; i++) {
     const song = songs[i];
+    if(!song.preview.lowerCase() == "video"){
     template += `
     <div class="col-xs-12 col-md-12 ">
         <div class="row mt-3 mb-3">
@@ -28,21 +29,21 @@ for (let i = 0; i < songs.length; i++) {
                             <p>Song: ${song.title}</p>
                             <p>Album Price: ${song.price}</p>
                         </div>    
-                    <audio controls class="mb-2">
+                    <audio class="audio" controls class="mb-2">
                         <source src="${song.preview}"/>
                     </audio>
                     </div>
-                    
                 </div>
             </div>
         </div>            
     </div>
-`
-}
+`}
+  }
+
+
 document.getElementById('songs').innerHTML = template
 
 }
-
 
 //PUBLIC
 class ItunesController {
